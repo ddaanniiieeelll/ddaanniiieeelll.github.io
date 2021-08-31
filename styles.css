@@ -1,0 +1,156 @@
+/*
+  Write your own styles here.
+
+  We've included some classes to get you going
+*/
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans+Condensed:700|IBM+Plex+Sans:400,500,600i,700&display=swap'); */
+
+
+
+body {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+
+}
+/*Test*/
+.body {
+  /* height: 100vh;
+  border: 10px solid rgb(9, 18, 33);
+  margin: 0px; */
+
+}
+
+
+.sv-feed-info {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.sv-feed-item {
+  float: left;
+}
+
+h1 {
+  font-family: 'IBM Plex Sans';
+  font-size: 3.75em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-family: 'IBM Plex Sans';
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+code {
+  font-family: 'IBM Plex Mono';
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  background: #EEEEEE;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-radius: 4px;
+  overflow-x: scroll;
+}
+
+img {
+  height: auto;
+  max-width: 60vw;
+  width: auto;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+td, th {
+  padding: 0;
+  font-size: 1.2em;
+  height: 1.5em;
+  border: solid #E0E0E0 2px;
+  padding-left: 2px;
+}
+p, li {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+.sv-feed-item-photo img {
+  background-color: #efefef;
+}
+
+.sv-feed-item-photo-caption p {
+  font-size: 0.8em;
+}
+
+.sv-feed-item-markdown p {
+  font-family: 'IBM Plex Sans';
+  font-weight: 400;
+  font-size: 1.5em;
+  max-width: 80vw;
+}
+
+.sv-feed-item-photo img.lazy-loaded {
+  background-color: transparent;
+}
+
+/*
+  Mobile First!
+
+  Include your desktop styles here
+*/
+@media screen and (max-width: 768px){
+  .sv-feed-item-markdown p {
+    font-size: 1.2em;
+    font-weight: 500;
+    max-width: 90vw;
+}
+
+img {
+  height: auto;
+  max-width: 90vw;
+  width: auto;
+}
+
+  .sv-feed {
+    border: 0px;
+  }
+
+  h1 {
+    font-family: 'IBM Plex Sans Condensed';
+    /* font-family: serif; */
+    font-size: 3em;
+    /*color: green;*/
+  }
+
+  p, li {
+      font-size: 1.2em;
+      font-weight: 500;
+      line-height: 1.5;
+  }
+
+  code {
+    font-family: 'IBM Plex Mono';
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    background: #EEEEEE;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 4px;
+    overflow-x: scroll;
+  }
