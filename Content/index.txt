@@ -1,7 +1,7 @@
 Title: ddaanniiieeelll
 =====
 Hello, this website is currently under development.
-You’ll soon find more contents here.  
+You’ll soon find more contents here.
 –d.
 
 {{{ pages.about.link }}} &sdot; {{{ pages.css reference.link }}}
@@ -11,4 +11,4 @@ You’ll soon find more contents here.
 {{{ categories.Work.contents }}}
 
 ## Terminal Use
-{{{ categories.Terminal Use.contents }}}
+{{{ categories.TerminalUse.contents }}}
