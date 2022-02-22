@@ -1,4 +1,4 @@
-Title: Terminal Use
+Title: terminal use
 =====
 
 # Terminal
@@ -172,4 +172,3 @@ Some useful basic commands
 
 Let’s say you want to change the directory but don’t want to type in the path you can use drag and drop with the Terminal.
 To do that you simply type in the `cd` command and drag the directory from the finder into the Terminal window.
- 
