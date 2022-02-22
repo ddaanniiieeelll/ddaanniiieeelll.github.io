@@ -1,4 +1,4 @@
-Title: terminal use
+Title: Terminal Use
 =====
 
 # Terminal
@@ -25,7 +25,7 @@ The `$` sign signifies that the Terminal is ready to accept your command (in the
 ## Moving between directories
 A very useful command is `pwd`. It stands for **Print Working Directory** and it will show you exactly where you are. Just type in pwd after the `$` sign and press enter.
 
-![Image](../Content/images/terminal/pwd.png)
+![Image](../images/terminal/pwd.png)
 
 You can see it prints out `/Users/daniel`
 This is the directory we are currently in and all the commands we execute will be executed in this directory.
