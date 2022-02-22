@@ -1,0 +1,14 @@
+Title: ddaanniiieeelll
+=====
+Hello, this website is currently under development.
+You’ll soon find more contents here.  
+–d.
+
+{{{ pages.about.link }}} &sdot; {{{ pages.css reference.link }}}
+{{{ pages.socials.link }}} {{{ pages.css reference.link }}}
+
+## Work
+{{{ categories.Work.contents }}}
+
+## Terminal Use
+{{{ categories.Terminal Use.contents }}}
