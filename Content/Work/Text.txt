@@ -1,0 +1,7 @@
+Title: Text
+=====
+
+# Text
+
+Text was part of my diploma project at HBKsaar. It started out as a typewriter-inspired monospaced with an accompanying underline version.
+It got extended with multiple stylistic sets that increased respectively decreased the width of some glyphs so it had a more proportional feel to it while still being a monospaced under the hood.

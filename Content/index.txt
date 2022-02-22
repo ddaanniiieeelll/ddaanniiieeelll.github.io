@@ -1,0 +1,12 @@
+Title: ddaanniiieeelll
+=====
+hellooo
+
+{{{ pages.about.link }}} &sdot; {{{ pages.css reference.link }}}
+{{{ pages.socials.link }}} {{{ pages.css reference.link }}}
+
+## Work
+{{{ categories.Work.contents }}}
+
+## Terminal Use
+{{{ categories.Terminal Use.contents }}}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Terminal Use</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="static/style.css" />
+        <!-- This is added by me to test if we can now use our own fonts -->
+        <link rel="stylesheet" href="static/fonts.css" />
+    </head>
+
+    <body>
+        <main>
+            <nav class="crumb">
+    <a href='./index.html'>index</a> / <a href='./terminal use.html'>Terminal use</a> / <a href='./terminal use.html' class='highlit'>Terminal Use</a>
+</nav>
+
+<article>
+    <h1>Terminal</h1>
+<p>The Terminal is basically your computer without the graphical user interface. You can access everything on your computer with it, but instead of clicking with your mouse you do it with written commands. Similar applications also exist on other operating systems. These are commonly referred to as <a href="https://en.wikipedia.org/wiki/Command-line_interface#Operating_system_command-line_interfaces">command-line tools</a> or <a href="https://en.wikipedia.org/wiki/Shell_(computing)">shells</a>.</p>
+<h1>Starting the app</h1>
+<p>If we open up the Terminal – either by using the Terminal.app in Programs → Utilities, or by opening the Spotlight search (command + space) and typing in Terminal – you’ll see a window similar to this:</p>
+<p><img alt="Image" src="../Content/images/terminal/starting_window.png" /></p>
+<p>It shows you the name of the computer, the current folder you are in and your username.
+Yours will look a bit different, but you’ll also have the <code>~</code> and the <code>$</code> symbols.
+What we see is:
+<code>Daniels-MacBook-Pro:~ daniel$</code>
+My <strong>computer name</strong> is: <code>Daniels-MacBook-Pro</code>
+The <strong>directory</strong> is: <code>~</code>
+My <strong>username</strong> is: <code>daniel</code></p>
+<p>The Directory is the current folder you are in, the <code>~</code> means that it is your home folder</p>
+<p>The <code>$</code> sign signifies that the Terminal is ready to accept your command (in the future if you see commands somewhere that start with the <code>$</code> you don’t have to type it. As long as the Terminal is ready, it’ll be there).</p>
+<h1>Using the Terminal</h1>
+<h2>Moving between directories</h2>
+<p>A very useful command is <code>pwd</code>. It stands for <strong>Print Working Directory</strong> and it will show you exactly where you are. Just type in pwd after the <code>$</code> sign and press enter.</p>
+<p><img alt="Image" src="../Content/images/terminal/pwd.png" /></p>
+<p>You can see it prints out <code>/Users/daniel</code>
+This is the directory we are currently in and all the commands we execute will be executed in this directory.</p>
+<p>Now you know where you are, but you also want to know what’s there so you can interact with those files and directories. For that we use the command <code>ls</code> which stands for <strong>List Directory Contents</strong>.
+Again we just type in the command after the <code>$</code> sign and press enter.</p>
+<p><img alt="Image" src="../Content/images/terminal/ls.png" /></p>
+<p>Now you see the exact same things you also see in the Finder.</p>
+<p><img alt="Image" src="../Content/images/terminal/finder.png" /></p>
+<p>So right now we are in the home folder, and we know what files and directories there are. Now let’s go to another directory. To do that we use the <code>cd</code> command, it stands for <strong>Change Directory</strong>.</p>
+<p>Say I want to do something in the folder where all the screenshots for this article are, I use the cd command like that:</p>
+<p><code>cd Screenshots</code></p>
+<p>As you can see the <code>~</code> sign (which describes our home folder) has changed to <em>Screenshots</em>. We changed the directory from <em>Home</em> to <em>Screenshots</em> and now we can interact with the files in this folder. For example we can look what is inside this folder with the <code>ls</code> command</p>
+<p><img alt="Image" src="../Content/images/terminal/screenshots.png" /></p>
+<p>If you want to move into a directory that has a space in it’s name you would either have to wrap the name in double quotes or escape each space with a backslash.
+So if the folder from our previous example was called <code>Screen Shots</code> instead of <code>Screenshots</code> we would have used either</p>
+<p><code>cd "Screen Shots"</code> or <code>cd Screen\ Shots</code></p>
+<p>When you moved to a directory, are done with your work there and want to go back to the previous directory, you can do so by using <code>cd ..</code>
+The <code>..</code> stands for the parent directory of the one you are currently in.</p>
+<p>After a while the Terminal window gets quite busy. With the <code>clear</code> command we can clear the window from all the things we did before.</p>
+<h1>Interacting with files and directories</h1>
+<h2>Creating directories</h2>
+<p>To create a new directory we use the <code>mkdir</code> command (<strong>Make Directory</strong>)</p>
+<p><code>mkdir newFolder</code></p>
+<p><img alt="Image" src="../Content/images/terminal/create_directory.png" /></p>
+<p>And to remove the directory again we use <code>rmdir</code> (<strong>Remove Directory</strong>)</p>
+<p><code>rmdir newFolder</code></p>
+<p><img alt="Image" src="../Content/images/terminal/remove_directory.png" /></p>
+<h2>Creating files</h2>
+<p>Now let’s create a file in our new directory. First we change the directory to our new folder with <code>cd newFolder</code> and then we create a text file with the command <code>touch</code>.</p>
+<p><code>touch fileOne.txt</code></p>
+<p><img alt="Image" src="../Content/images/terminal/touch.png" /></p>
+<p>This is now a completely empty texfile. To write text to a file you can use the <code>echo</code> command</p>
+<p><code>echo "Hello :)" &gt; fileOne.txt</code></p>
+<p>To read the contents of the file we use the command <code>cat</code></p>
+<p><code>cat fileOne.txt</code></p>
+<p><img alt="Image" src="../Content/images/terminal/cat.png" /></p>
+<h2>Deleting files and directories</h2>
+<p>To remove files we can use the <code>rm</code> (<strong>Remove</strong>) command</p>
+<p><code>rm fileOne.txt</code></p>
+<p>Note that this will delete the file <strong>permanently</strong>. It won’t be sent to the Trash and there is no way to recover the file.</p>
+<p>We already know how to delete a directory with the <code>rmdir</code> command. However this only works if the directory is empty. If the directory is not empty we get an error.</p>
+<p><img alt="Image" src="../Content/images/terminal/not_empty.png" /></p>
+<p>And the <code>rm</code> command alone won’t work on a directory either.</p>
+<p><img alt="Image" src="../Content/images/terminal/rm_error.png" /></p>
+<p>Instead if you want to delete a directory that contains files you need to use <code>rm -r newFolder</code>
+Again: this deletes the directory and all the files in it <strong>permanently</strong></p>
+<h2>Running multiple commands</h2>
+<p>To run multiple commands in one line you can use the <code>&amp;&amp;</code> operator. As long as the first command was successful the second one will also run.
+<code>mkdir newFolder &amp;&amp; cd newFolder</code> for example creates a new directory and changes the directory in one command so you can immediately start working in your new directory.</p>
+<h1>Creating virtual environments</h1>
+<p>Virtual environments come in handy if you need to work with the Terminal and certain packages you don’t want to install globally on your computer.
+Usually if you need to install an additional package (with the package you basically install a little program) to do things with the Terminal, it will be installed globally. But sometimes you need to work with two different versions of the same program and therefore it’s better to have them installed in isolated environments.</p>
+<p>Or let’s say you have a collection of programs you always use, in order to keep everything together you could create a virtual environment and call it <em>FontEngineering</em> for example. That way you have all the important programs right in one place without interfering with the global packages.</p>
+<p>Start by creating a new directory to work with</p>
+<p><code>mkdir virtualEnvironment &amp;&amp; cd virtualEnvironment</code></p>
+<p>Now we create a virtual environment inside the directory</p>
+<p><code>python3 -m venv fontEngineering</code></p>
+<p><strong>venv</strong> is the name of the command that creates the virtual environment.
+<strong>fontEngineering</strong> in this case is the name of our virtual environment.
+In the <strong>bin</strong> folder you have the files that interact with the virtual environment.
+And in the <strong>lib</strong> folder you have a copy of the python installation you used to create the virtual environment along with the site-packages folder (if you install packages in your virtual environment this is the place you can find them).
+In order to activate the environment use the following command</p>
+<p><code>source fontEngineering/bin/activate</code></p>
+<p>Notice how the prompt is now prefixed with the name of the environment. That means it is active and the python executable will only use the environments packages.
+To deactivate the environment again we can simply type</p>
+<p><code>deactivate</code></p>
+<h2>Basic commands</h2>
+<p>Some useful basic commands</p>
+<pre>
+╔══════════╦═════════════════════════╦════════════════════════════════════════════════════════════╗
+║ Command  ║         Meaning         ║                         Description                        ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ pwd      ║ Print working directory ║ Find out where you are                                     ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ ls       ║ list directory contents ║ See what files and directories are in the current location ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ cd       ║ change directory        ║ Change the current directory                               ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ clear    ║ clear                   ║ Clear the Terminal window                                  ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ mkdir    ║ make directory          ║ Create a new directoy                                      ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ rmdir    ║ remove directory        ║ Remove directory                                           ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ rm       ║ remove                  ║ Remove files                                               ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ touch    ║ touch                   ║ Create a new file                                          ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ echo "x" ║ echo                    ║ Write text to a file                                       ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ cat      ║ concatenate             ║ View contents of a file                                    ║
+╠══════════╬═════════════════════════╬════════════════════════════════════════════════════════════╣
+║ &&       ║ and                     ║ Run multiple commands                                      ║
+╚══════════╩═════════════════════════╩════════════════════════════════════════════════════════════╝</pre>
+
+<p>Let’s say you want to change the directory but don’t want to type in the path you can use drag and drop with the Terminal.
+To do that you simply type in the <code>cd</code> command and drag the directory from the finder into the Terminal window.</p>
+</article>
+        </main>
+        <footer>
+            <a href="./copyright.html">&copy;</a>
+            <a href="./about.html">Daniel Weiand</a>
+            <span class="footer__nocss_divider"> &sdot; </span>
+            <span class="footer__right">Build 2022·02·11 18:20</span>
+        </footer>
+    </body>
+</html>
