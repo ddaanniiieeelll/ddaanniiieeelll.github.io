@@ -10,5 +10,5 @@ You’ll soon find more contents here.
 ## Work
 {{{ categories.Work.contents }}}
 
-## Terminal Use
-{{{ categories.Terminal Use.contents }}}
+## Terminal
+{{{ categories.Terminal.contents }}}
