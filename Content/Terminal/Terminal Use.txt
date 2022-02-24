@@ -12,10 +12,10 @@ If we open up the Terminal – either by using the Terminal.app in Programs → 
 It shows you the name of the computer, the current folder you are in and your username.
 Yours will look a bit different, but you’ll also have the `~` and the `$` symbols.
 What we see is:
-`Daniels-MacBook-Pro:~ daniel$`
-My **computer name** is: `Daniels-MacBook-Pro`
-The **directory** is: `~`
-My **username** is: `daniel`
+`Daniels-MacBook-Pro:~ daniel$`<br>
+My **computer name** is: `Daniels-MacBook-Pro`<br>
+The **directory** is: `~`<br>
+My **username** is: `daniel`<br>
 
 The Directory is the current folder you are in, the `~` means that it is your home folder
 
