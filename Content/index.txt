@@ -1,7 +1,7 @@
 Title: ddaanniiieeelll
 =====
-Hello, this website is currently under development.
-You’ll soon find more contents here.
+Hello, this website is currently under development.<br>
+You’ll soon find more contents here.<br>
 –d.
 
 {{{ pages.about.link }}} &sdot; {{{ pages.css reference.link }}}
