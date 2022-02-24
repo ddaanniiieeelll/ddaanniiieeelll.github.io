@@ -5,7 +5,7 @@
     --text: #000;
     /* --secondary: #999; */
     --secondary: #F0FFF0;
-    --lines: #bbb;
+    --lines: #000;
 
     /* This works now!! You have to add the link to the @font-face css in the template layout.html */
     /* Commented out until we have a Bold and Regular Version of Anti for proportional and a Regular and Bold of Text for monospaced. */
@@ -64,7 +64,7 @@ h2 {
 h3 {
     margin-top: var(--h-margin);
     font-weight: normal;
-    color: var(--secondary);
+    /* color: var(--secondary); */
     border-bottom: 1px solid var(--lines);
     font-size: var(--text-font-size);
     line-height: var(--text-line-height);
