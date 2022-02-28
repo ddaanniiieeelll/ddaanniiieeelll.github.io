@@ -82,7 +82,7 @@ Now let’s create a file in our new directory. First we change the directory to
 
 This is now a completely empty texfile. To write text to a file you can use the `echo` command
 
-`echo "Hello :)" > fileOne.txt`
+`echo “Hello :)” > fileOne.txt`
 
 To read the contents of the file we use the command `cat`
 
