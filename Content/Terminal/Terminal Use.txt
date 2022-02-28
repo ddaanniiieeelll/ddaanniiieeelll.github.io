@@ -52,7 +52,7 @@ As you can see the `~` sign (which describes our home folder) has changed to *Sc
 If you want to move into a directory that has a space in it’s name you would either have to wrap the name in double quotes or escape each space with a backslash.
 So if the folder from our previous example was called `Screen Shots` instead of `Screenshots` we would have used either
 
-`cd "Screen Shots"` or `cd Screen\ Shots`
+`cd “Screen Shots”` or `cd Screen\ Shots`
 
 When you moved to a directory, are done with your work there and want to go back to the previous directory, you can do so by using `cd ..`
 The `..` stands for the parent directory of the one you are currently in.
