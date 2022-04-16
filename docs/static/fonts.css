@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "Anti Bold";
-  src: url("AntiBold.woff2") format("woff2");
+  src: url("Anti-Bold.woff2") format("woff2");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Anti Regular";
-  src: url("AntiRegular.woff2") format("woff2");
+  src: url("Anti-Regular.woff2") format("woff2");
   font-weight: 500;
 }
