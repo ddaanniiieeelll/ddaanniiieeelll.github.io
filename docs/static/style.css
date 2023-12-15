@@ -1,10 +1,16 @@
 :root {
     /* --background: #F6F6F6; */
-    --background: #809a80;
+    /* --background: #809a80; */
+
+    /* this is just for the workshop */
+    --background: F5F5F5;
     --background-code: #B0BEC5;
     --text: #000;
     /* --secondary: #999; */
-    --secondary: #F0FFF0;
+    /* --secondary: #F0FFF0; */
+
+    /* this is just for the workshop */
+    --secondary: #2E8B57;
     --lines: #000;
 
     /* This works now!! You have to add the link to the @font-face css in the template layout.html */
@@ -118,6 +124,7 @@ img {
   border-radius: 2px;
 }
 
+
 blockquote {
     margin: 20px 0px;
     border-left: 1px solid var(--lines);
@@ -183,12 +190,21 @@ li p {
 }
 
 /*PLEASE FIX */
-article img {
+
+/* article img {
     max-width: 100vw;
     width: 140%;
     margin: 1em -20% 0px;
     border-radius: 2px;
+} */
+
+article img {
+    max-width: 80vw;
+    width: 80%;
+    margin: 1em 0px;
+    border-radius: 2px;
 }
+
 @media only screen and (max-width: calc(46em * 1.4)) {
     article img { width: 100%; margin-left: 0px; margin-right: 0px; }
 }
@@ -217,7 +233,8 @@ footer { padding: var(--h-margin) var(--v-margin); }
 .highlit {
     display: inline-block;
     color: var(--background);
-    background-color: var(--text);
+    /* This is turned off for the python */
+    /* background-color: var(--text); */
     border-radius: 2px;
     padding: 2px 4px;
 }
