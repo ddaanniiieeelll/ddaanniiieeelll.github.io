@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Anti Regular';
+    src: url(fonts/Anti-Regular.woff2) format('woff2'),
+}
+
+@font-face {
+    font-family: 'Anti Bold';
+    src: url(fonts/Anti-Bold.woff2) format('woff2'),
+}

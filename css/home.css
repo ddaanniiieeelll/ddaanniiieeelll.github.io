@@ -54,6 +54,7 @@ section a {
     font-size: 16px;
     line-height: 18px;
     max-width: 100px;
+    font-family: var(--proportional-bold);
 }
 section a::before {
     content: '';

@@ -12,6 +12,8 @@
     --flowers: #3d0b56;
     --sidewalk: #ececec;
     --note: lemonchiffon;
+    --proportional: "Anti Regular", sans-serif;
+    --proportional-bold: "Anti Bold", sans-serif;
 }
 
 /* Border box sizing fix */
@@ -22,7 +24,7 @@ body {
   padding: 30px;
   /* margin: 0; */
   margin-left: 70px;
-  font-family: sans-serif;
+  font-family: var(--proportional);
   color: var(--);
   background-color: var(--sidewalk);
   -webkit-font-smoothing: antialiased;
@@ -35,10 +37,11 @@ body {
 h1, h2, h3, h4, p, ol, ul, li {
     padding: 0;
     margin: 0;
-    font-weight: normal;
+    font-family: var(--proportional-bold);
     font-size: 18px;
 }
 p {
+    font-family: var(--proportional);
     font-size: 18px;
     line-height: 24px;
 }
@@ -52,6 +55,7 @@ a {
 /* Mobile */
 @media(max-width: 600px) {
     body {
+        margin: 0;
         padding: 18px;
     }
 }

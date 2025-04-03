@@ -58,6 +58,7 @@ article h2  {
     font-weight: bold;
 }
 article p, article ol, article ul, article blockquote, article .table-section, article h2, article hr, article blockquote {
+    font-family: var(--proportional);
     max-width: 580px;
     margin: 18px auto;
 }
