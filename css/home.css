@@ -81,6 +81,7 @@ section a:hover::before {
     right: 18px;
     color: var(--bluetooth);
     z-index: 1;
+    font-family: var(--proportional);
 }
 
 /* Entry icon palettes */
